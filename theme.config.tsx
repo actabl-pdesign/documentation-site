@@ -2,16 +2,16 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>BellHop Design System - Actabl Product Design</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/actabl-pdesign/',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://actabl.com',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/actabl-pdesign',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'BellHop Design System Docs',
   },
 }
 
