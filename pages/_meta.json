@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Alert",
-  "advanced": "Navigation",
+  "alert": "Alert",
+  "navigaton": "Navigation",
   "about": {
     "title": "About",
     "type": "page"

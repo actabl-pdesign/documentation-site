@@ -1,8 +1,16 @@
 import React from 'react'
+import { BellhopLogo } from './components/BellhopLogo'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>BellHop Design System - Actabl Product Design</span>,
+    logo: (
+    <>
+      <BellhopLogo />
+      <span style={{ marginLeft: '.4em', fontWeight: 700 }}>
+        Bellhop Design System
+      </span>
+    </>
+  ),
   project: {
     link: 'https://github.com/actabl-pdesign/',
   },
