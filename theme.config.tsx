@@ -5,7 +5,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
     logo: (
     <>
-      <BellhopLogo />
+      <BellhopLogo style={{ width: '100px', height: auto }} />
       <span style={{ marginLeft: '.4em', fontWeight: 700 }}>
         Bellhop Design System
       </span>
