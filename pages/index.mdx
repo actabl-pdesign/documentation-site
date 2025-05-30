@@ -1,11 +1,81 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# Bellhop Design System - v0.dev Integration Guide
 
-## What is Nextra?
+This comprehensive guide helps developers and designers use the Bellhop Design System effectively with v0.dev for rapid prototyping and component generation.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+## Table of Contents
 
-## Documentation
+1. [Quick Start for v0.dev](#quick-start-for-v0dev)
+2. [Component Inventory](#component-inventory)
+3. [Design Tokens Reference](#design-tokens-reference)
+4. [v0.dev Prompting Strategies](#v0dev-prompting-strategies)
+5. [Common Composition Patterns](#common-composition-patterns)
+6. [Best Practices](#best-practices)
+7. [Troubleshooting](#troubleshooting)
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+## Quick Start for v0.dev
+
+### Essential Information for v0.dev Prompts
+
+When working with v0.dev, always include these key details in your prompts:
+
+**Design System Context:**
+\`\`\`
+Using Bellhop Design System with:
+- Primary color: Indigo (#2642CF)
+- Secondary color: Pink (#F63D68)
+- Typography: Inter font family
+- Border radius: 8px standard, 12px for cards
+- Spacing: 8px, 16px, 24px increments
+\`\`\`
+
+**Quick Setup:**
+\`\`\`css
+/* Include in your v0.dev prompts for proper styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Use these CSS variables */
+:root {
+  --color-primary: 38 66 207; /* Indigo-600 */
+  --color-secondary: 246 61 104; /* Pink-500 */
+  --color-gray-50: 240 20% 98%;
+  --color-gray-900: 233 33% 10%;
+}
+\`\`\`
+
+## Component Inventory
+
+### 🟢 Fully Implemented Components
+Ready to use in v0.dev with full variant support:
+
+| Component | Variants | Sizes | States | v0.dev Ready |
+|-----------|----------|-------|--------|--------------|
+| **Button** | primary, secondary, tertiary, danger, ghost | sm, md, lg | default, hover, active, disabled | ✅ |
+| **Input** | default, error, disabled | - | default, focus, error, disabled | ✅ |
+| **Card** | default, interactive, featured | - | default, hover, active | ✅ |
+| **Alert** | success, warning, error, info | - | default | ✅ |
+| **Toggle** | default, danger, success | sm, md, lg | on, off, disabled | ✅ |
+| **DatePicker** | default, embedded | - | default, open, disabled | ✅ |
+| **Stepper** | horizontal, vertical | - | complete, current, upcoming | ✅ |
+
+### 🟡 Partially Implemented Components
+Available but may need customization:
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| **Modal** | Basic structure | Needs overlay and animation variants |
+| **Dropdown** | Core functionality | Needs menu positioning variants |
+| **Table** | Basic layout | Needs sorting and pagination features |
+| **Tabs** | Basic structure | Needs underline and pill variants |
+| **Breadcrumb** | Basic structure | Needs separator customization |
+
+### 🔴 Planned Components
+Not yet implemented:
+
+- Navigation Bar
+- Sidebar
+- Footer
+- Timeline
+- Calendar
+- File Upload
+- Multi-select
+- Command Palette
